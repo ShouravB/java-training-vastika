@@ -7,13 +7,13 @@ public class ChaseBankApplication {
 
         new Menu();
 
-        Languages english = new Languages();
-        english.setLanguageId(1);
-        english.setLanguageName("English");
+        Languages english = new Languages(1,"English");
+//        english.setLanguageId(1);
+//        english.setLanguageName("English");
 
-        Languages nepali = new Languages();
-        nepali.setLanguageId(2);
-        nepali.setLanguageName("Nepali");
+        Languages nepali = new Languages(2,"Nepali");
+//        nepali.setLanguageId(2);
+//        nepali.setLanguageName("Nepali");
 
         Languages french = new Languages();
         french.setLanguageId(3);

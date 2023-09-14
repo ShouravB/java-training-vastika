@@ -1,8 +1,9 @@
 package abstraction;
 
-public class BankUtils {
+public final class BankUtils {
 
-    public boolean transferBalance(Account fromAccount, Account toAccount, double amountToTransfer){
+    private BankUtils(){}
+    public static boolean transferBalance(Account fromAccount, Account toAccount, double amountToTransfer){
         if (fromAccount.getAccountBalance() < amountToTransfer){
             return false;
         }

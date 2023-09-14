@@ -4,6 +4,12 @@ public class Languages {
 
     private int languageId;
     private String languageName;
+    public Languages(){}
+
+    public Languages(int languageId,String languageName){
+        this.languageId=languageId;
+        this.languageName=languageName;
+    }
 
     public int getLanguageId() {
         return languageId;

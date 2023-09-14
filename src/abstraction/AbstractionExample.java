@@ -15,8 +15,8 @@ public class AbstractionExample {
         accountB.setSocialSecurityNumber("0123456789");
         accountB.setAccountBalance(500.00);
 
-        BankUtils bankUtils = new BankUtils();
-        if(bankUtils.transferBalance(accountA, accountB,1000.00)){
+        //BankUtils bankUtils = new BankUtils();
+        if(BankUtils.transferBalance(accountA, accountB,1000.00)){
             System.out.println("balance transfer successful");
         }else{
             System.out.println("Balance couldnt be transfer");
