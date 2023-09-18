@@ -1,16 +1,13 @@
 package predefinedclasses;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
-import java.util.Date;
 
 public final class DateUtils {
 
     private  DateUtils(){}
 
-    public static void findPostDuration (String postDate){
+    public static void calculatePostDuration(String postDate){
 
         LocalDateTime currentDate= LocalDateTime.now();
         LocalDateTime postedDate = LocalDateTime.parse(postDate);
