@@ -7,17 +7,17 @@ public class StringSplitExample {
     public static void main(String[] args) {
 
         try{
-            String input ="5 12";
-            String[] splitInput = input.split(" ");
+            String input ="5 12  \n";
+            String[] splitInput = input.trim().split(" ");
             StringBuilder outputString=new StringBuilder();
-            int count =0;
+            //int count =0;
 
 
             for (int i = parseInt(splitInput[0]); i< parseInt(splitInput[splitInput.length-1]); i++){
                 if(i % 5 == 0){
                     outputString.append(i);
                     outputString.append(" ");
-                    count++;
+                    i+=4;
                 }
             }
 
