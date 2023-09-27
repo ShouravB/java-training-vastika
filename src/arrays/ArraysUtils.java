@@ -64,35 +64,35 @@ public final class ArraysUtils {
         return sb.substring(0, sb.length()-1).split(",");
     }
 
-//    public static String[] leftRotationOfStringArray(String[] arrayOfString, int pos){
-//        StringBuilder sb = new StringBuilder();
-//        for (int i = pos; i< arrayOfString.length ; i++){
-//            sb.append(arrayOfString[i]);
-//            sb.append(",");
-//        }
+    public static String[] leftRotationOfStringArray(String[] arrayOfString, int pos){
+        StringBuilder sb = new StringBuilder();
+        for (int i = pos; i< arrayOfString.length ; i++){
+            sb.append(arrayOfString[i]);
+            sb.append(",");
+        }
+
+        for (int i = 0; i<=pos-1  ; i++){
+            sb.append(arrayOfString[i]);
+            sb.append(",");
+        }
+
+        //System.out.println(sb.toString());
+        return  sb.toString().split(",");
+    }
 //
-//        for (int i = arrayOfString.length-pos-1; i>=0  ; i--){
-//            sb.append(arrayOfString[i]);
-//            sb.append(",");
-//        }
-//
-//        //System.out.println(sb.toString());
-//        return  sb.toString().split(",");
-//    }
-//
-//    public static String[] rightRotationOfStringArray(String[] arrayOfString, int pos){
-//        StringBuilder sb = new StringBuilder();
-//        for (int i = pos+1 ; i< arrayOfString.length ; i++){
-//            sb.append(arrayOfString[i]);
-//            sb.append(",");
-//        }
-//
-//        for (int i = 0; i< pos ; i++){
-//            sb.append(arrayOfString[i]);
-//            sb.append(",");
-//        }
-//
-//        //System.out.println(sb.toString());
-//        return  sb.toString().split(",");
-//    }
+    public static String[] rightRotationOfStringArray(String[] arrayOfString, int pos){
+        StringBuilder sb = new StringBuilder();
+        for (int i = arrayOfString.length-pos;  i< arrayOfString.length ; i++){
+            sb.append(arrayOfString[i]);
+            sb.append(",");
+        }
+
+        for (int i = 0; i< arrayOfString.length-pos ; i++){
+            sb.append(arrayOfString[i]);
+            sb.append(",");
+        }
+
+        //System.out.println(sb.toString());
+        return  sb.toString().split(",");
+    }
 }
