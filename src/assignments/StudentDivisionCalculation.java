@@ -3,7 +3,7 @@ package assignments;
 public class StudentDivisionCalculation {
 
     public static void main(String[] args) {
-        int[] marks = {83,9,78,47,80};
+        int[] marks = {83,39,78,47,80};
         int sum = 0;
         boolean passedAll = true;
         for (int mark : marks) {
