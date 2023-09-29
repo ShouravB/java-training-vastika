@@ -34,7 +34,7 @@ public class ArrayAssignments {
         System.out.println(Arrays.toString(ArraysUtils.leftRotationOfStringArray(arr1, 4)));
 
         System.out.println("*****************************************************************************************");
-//        System.out.println();
+        System.out.println();
 
         System.out.println(Arrays.toString(arr1));
         System.out.println(Arrays.toString(ArraysUtils.rightRotationOfStringArray(arr1, 4)));
@@ -52,6 +52,23 @@ public class ArrayAssignments {
         System.out.println(Arrays.toString(arr1));
         UpdateArrayUtils.reverseArrayOfString(arr1);
         System.out.println(Arrays.toString(arr1));
+
+        System.out.println("*****************************************************************************************");
+        System.out.println();
+
+        System.out.println(Arrays.toString(arr));
+        UpdateArrayUtils.rotateIntegerArrayRight(arr,2);
+        System.out.println(Arrays.toString(arr));
+
+        System.out.println("*****************************************************************************************");
+        System.out.println();
+
+        System.out.println(Arrays.toString(arr));
+        UpdateArrayUtils.rotateIntegerArrayLeft(arr,3);
+        System.out.println(Arrays.toString(arr));
+
+
+
 
 
     }
