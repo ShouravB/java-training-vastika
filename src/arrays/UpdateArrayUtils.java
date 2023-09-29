@@ -18,7 +18,7 @@ public class UpdateArrayUtils {
         }
     }
 
-    public static void reverseIntegerArray(int[] arr, int start, int end){
+    private static void reverseIntegerArray(int[] arr, int start, int end){
 
         while(start < end){
             int temp = arr[start];
@@ -66,7 +66,7 @@ public class UpdateArrayUtils {
         }
     }
 
-    public static void reverseArrayOfString(String[] arrayOfStrings, int start, int end){
+    private static void reverseArrayOfString(String[] arrayOfStrings, int start, int end){
 
         while(start < end){
             String temp = arrayOfStrings[start];
