@@ -66,5 +66,37 @@ public class UpdateArrayUtils {
         }
     }
 
+    public static void reverseArrayOfString(String[] arrayOfStrings, int start, int end){
+
+        while(start < end){
+            String temp = arrayOfStrings[start];
+            arrayOfStrings[start] = arrayOfStrings[end];
+            arrayOfStrings[end] = temp;
+
+            start++;
+
+            end--;
+        }
+    }
+
+
+    public static void rotateStringArrayLeft(String[] stringArray, int pos){
+        int length = stringArray.length;
+
+        pos =pos % length;
+        reverseArrayOfString(stringArray);
+        reverseArrayOfString(stringArray,0,length-pos-1);
+        reverseArrayOfString(stringArray,length-pos,length-1);
+    }
+
+    public static void rotateStringArrayRight(String[] stringArray, int pos){
+        int length = stringArray.length;
+
+        pos =pos % length;
+        reverseArrayOfString(stringArray);
+        reverseArrayOfString(stringArray,0,pos-1);
+        reverseArrayOfString(stringArray,pos,length-1);
+    }
+
 
 }

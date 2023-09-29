@@ -1,5 +1,6 @@
 package arrays;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class ArrayAssignments {
@@ -64,8 +65,21 @@ public class ArrayAssignments {
         System.out.println();
 
         System.out.println(Arrays.toString(arr));
-        UpdateArrayUtils.rotateIntegerArrayLeft(arr,3);
+        UpdateArrayUtils.rotateIntegerArrayLeft(arr,2);
         System.out.println(Arrays.toString(arr));
+
+        System.out.println("*****************************************************************************************");
+        System.out.println();
+
+        String[] days = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+
+        System.out.println(Arrays.toString(days));
+        UpdateArrayUtils.rotateStringArrayLeft(days,2);
+        System.out.println(Arrays.toString(days));
+
+        System.out.println(Arrays.toString(days));
+        UpdateArrayUtils.rotateStringArrayRight(days,1);
+        System.out.println(Arrays.toString(days));
 
 
 
