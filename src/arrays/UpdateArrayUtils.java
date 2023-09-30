@@ -36,7 +36,7 @@ public class UpdateArrayUtils {
 
         pos = pos % length;
 
-        reverseIntegerArray(integerArray,0,length-1);
+        reverseIntegerArray(integerArray);
         reverseIntegerArray(integerArray,0,pos-1);
         reverseIntegerArray(integerArray,pos,length-1);
     }
@@ -46,7 +46,7 @@ public class UpdateArrayUtils {
 
         pos = pos % length;
 
-        reverseIntegerArray(integerArray,0,length-1);
+        reverseIntegerArray(integerArray);
         reverseIntegerArray(integerArray,0,length-pos-1);
         reverseIntegerArray(integerArray,length-pos,length-1);
     }

@@ -78,6 +78,9 @@ public class ArrayAssignments {
         UpdateArrayUtils.rotateStringArrayLeft(days,2);
         System.out.println(Arrays.toString(days));
 
+        System.out.println("*****************************************************************************************");
+        System.out.println();
+
         System.out.println(Arrays.toString(days));
         UpdateArrayUtils.rotateStringArrayRight(days,1);
         System.out.println(Arrays.toString(days));
