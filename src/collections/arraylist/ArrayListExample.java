@@ -1,6 +1,8 @@
 package collections.arraylist;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
 public class ArrayListExample {
 
@@ -31,8 +33,14 @@ public class ArrayListExample {
         blackListed.add("yugesh");
 
         System.out.println(names);
-        System.out.println(names.removeAll(blackListed));
+        //System.out.println(names.removeAll(blackListed));
         System.out.println(names);
         System.out.println(names.size());
+
+        Collections.reverse(names);
+        System.out.println(names);
+
+
+
     }
 }
