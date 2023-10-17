@@ -11,7 +11,7 @@ public class AssignmentMainClass {
 
         System.out.println(StringUtils.checkAnagramString("listen","silenT"));
 
-        System.out.println(StringUtils.exactKChars("abc",2));
+        System.out.println(StringUtils.exactKChars("aba",2));
 
         System.out.println(StringUtils.calculateSum("3333311111111111","44422222221111"));
 
